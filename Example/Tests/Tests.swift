@@ -9,11 +9,13 @@ class Tests: XCTestCase {
     XCTAssertEqual(workflow.clientRelease, "2.0")
     XCTAssertEqual(workflow.clientVersion, "702")
     XCTAssertEqual(workflow.icon.glyphNumber, 59845)
+//    XCTAssertEqual(workflow.icon.startColor, UIColor(red: 0.662745, green: 0.662745, blue: 0.662745, alpha: 1))
     XCTAssertEqual(workflow.icon.imageData.count, 0)
     XCTAssertEqual(workflow.importQuestions.count, 0)
     XCTAssertEqual(workflow.inputContentItemClasses.count, 17)
     XCTAssertEqual(workflow.minimumClientVersion, 411)
     XCTAssertEqual(workflow.types.count, 2)
+    
   }
 }
 

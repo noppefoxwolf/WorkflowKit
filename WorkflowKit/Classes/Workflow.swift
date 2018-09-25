@@ -42,7 +42,15 @@ extension Workflow {
   public class Icon: Decodable {
     public let glyphNumber: Int
     public let imageData: Data
-    public let startColor: Int64
+    public let startColor: Color
+    
+    required public init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: CodingKeys.self)
+      self.glyphNumber = try container.decode(Int.self, forKey: .glyphNumber)
+      self.imageData = try container.decode(Data.self, forKey: .imageData)
+      let startColorValue = try container.decode(Int64.self, forKey: .startColor)
+      self.startColor = UIColor(rgbaValue: startColorValue)
+    }
     
     public enum CodingKeys: String, CodingKey {
       case glyphNumber = "WFWorkflowIconGlyphNumber"
