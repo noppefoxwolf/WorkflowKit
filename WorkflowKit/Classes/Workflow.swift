@@ -70,17 +70,27 @@ public protocol WorkflowInitializable where Self: Workflow {
 
 extension Workflow: WorkflowInitializable {
   public static func `init`(url: URL) -> Workflow? {
-    guard let data = try? Data(contentsOf: url) else { return nil }
-    guard let plistFile = try? PropertyListSerialization.propertyList(from: data,
-                                                                      options: [],
-                                                                      format: nil) else { return nil }
-    guard let xmlData = try? PropertyListSerialization.data(fromPropertyList: plistFile,
-                                                            format: .xml,
-                                                            options: 0) else { return nil }
-    return self.init(data: xmlData)
+    do {
+      let data = try Data(contentsOf: url)
+      let plistFile = try PropertyListSerialization.propertyList(from: data,
+                                                                        options: [],
+                                                                        format: nil)
+      let xmlData = try PropertyListSerialization.data(fromPropertyList: plistFile,
+                                                              format: .xml,
+                                                              options: 0)
+      return self.init(data: xmlData)
+    } catch {
+      print(error)
+      return nil
+    }
   }
   
   public static func `init`(data: Data) -> Workflow? {
-    return try? PropertyListDecoder().decode(Workflow.self, from: data)
+    do {
+      return try PropertyListDecoder().decode(Workflow.self, from: data)
+    } catch {
+      print(error)
+      return nil
+    }
   }
 }

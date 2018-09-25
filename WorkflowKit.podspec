@@ -21,4 +21,5 @@ Library for shortcut app files.
   s.social_media_url = 'https://twitter.com/noppefoxwolf'
   s.ios.deployment_target = '12.0'
   s.source_files = 'WorkflowKit/Classes/**/*'
+  s.swift_version = '4.2'
 end

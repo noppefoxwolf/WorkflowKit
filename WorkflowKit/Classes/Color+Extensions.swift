@@ -22,4 +22,14 @@ extension Color {
     let a = CGFloat((rgbaValue & 0x000000FF)) / 255.0
     self.init(red: r, green: g, blue: b, alpha: a)
   }
+  
+  var light: Color {
+    let ratio: CGFloat = 2.0
+    var hue: CGFloat = 0
+    var saturation: CGFloat = 0
+    var brightness: CGFloat = 0
+    var alpha: CGFloat = 0
+    getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+    return Color(hue: hue, saturation: saturation, brightness: brightness * ratio, alpha: alpha)
+  }
 }
