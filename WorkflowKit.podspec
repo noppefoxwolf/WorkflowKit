@@ -9,34 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'WorkflowKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WorkflowKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Library for shortcut app files.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Library for shortcut app files.
                        DESC
 
   s.homepage         = 'https://github.com/noppefoxwolf/WorkflowKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'noppefoxwolf' => 'tomoya.hirano@dena.com' }
+  s.author           = { 'noppefoxwolf' => 'noppelabs@gmail.com' }
   s.source           = { :git => 'https://github.com/noppefoxwolf/WorkflowKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.social_media_url = 'https://twitter.com/noppefoxwolf'
+  s.ios.deployment_target = '12.0'
   s.source_files = 'WorkflowKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'WorkflowKit' => ['WorkflowKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
