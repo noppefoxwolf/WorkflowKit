@@ -51,9 +51,14 @@ extension Workflow {
   }
   
   public class Icon: Decodable {
+    
+    // Shortcuts.app/WorkflowGlyphs.ttf
     public let glyphNumber: Int
     public let imageData: Data
     public let startColor: Color
+    
+    // helper
+    public var homeIconImage: UIImage? { return UIImage(data: imageData) }
     
     required public init(from decoder: Decoder) throws {
       let container = try decoder.container(keyedBy: CodingKeys.self)
