@@ -11,8 +11,12 @@
 
 ```swift
 let url = Bundle(for: type(of: self)).url(forResource: "Flashlight Morse", withExtension: "shortcut")!
-let workflow = Workflow.init(url: url)!
-workflow.actions.map({ $0.identifier })
+let shortcut = Shortcut(url: url)!
+shortcut.workflow.actions.map({ $0.identifier })
+```
+
+```swift
+let gradientLayer = GradientLayerFactory.make(from: workflow.icon.startColor)
 ```
 
 ## Example

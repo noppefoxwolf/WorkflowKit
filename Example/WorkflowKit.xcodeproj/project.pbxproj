@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13CA8198156936242F1E21B5 /* Pods_WorkflowKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F3F77707DD6CF71C18D99D /* Pods_WorkflowKit_Example.framework */; };
+		37A08EEA215AD49600F1B98A /* ShortcutShare.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = 37A08EE9215AD49600F1B98A /* ShortcutShare.shortcut */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		05378F051EE30195602EC71A /* Pods_WorkflowKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkflowKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289BB39C94C0797A2ABADD05 /* Pods-WorkflowKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Tests/Pods-WorkflowKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		37A08EE9215AD49600F1B98A /* ShortcutShare.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ShortcutShare.shortcut; sourceTree = "<group>"; };
 		3F4F109187D232A4636BFAEC /* WorkflowKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WorkflowKit.podspec; path = ../WorkflowKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* WorkflowKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkflowKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		D798906E215A47F500AC8543 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37A08EE9215AD49600F1B98A /* ShortcutShare.shortcut */,
 				D7989072215A47FE00AC8543 /* Bitcoin Price.shortcut */,
 				D7989073215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut */,
 				D7989075215A47FE00AC8543 /* Get File Size.shortcut */,
@@ -239,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -280,6 +283,7 @@
 				D7989078215A47FE00AC8543 /* Stop Current Toggl Timer.shortcut in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				D7989079215A47FE00AC8543 /* Bitcoin Price.shortcut in Resources */,
+				37A08EEA215AD49600F1B98A /* ShortcutShare.shortcut in Resources */,
 				D798907B215A47FE00AC8543 /* New Link Post in Ulysses.shortcut in Resources */,
 				D7989076215A47FE00AC8543 /* PDF from Markdown.shortcut in Resources */,
 				D798907C215A47FE00AC8543 /* Get File Size.shortcut in Resources */,
@@ -417,12 +421,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -471,12 +477,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

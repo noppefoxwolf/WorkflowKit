@@ -17,7 +17,7 @@ class Tests: XCTestCase {
     XCTAssertEqual(workflow.types.count, 2)
   }
   
-  func testUnsafe() {
+  func testInit() {
     let urls = [
       Bundle.main.url(forResource: "Bitcoin Price", withExtension: "shortcut")!,
       Bundle.main.url(forResource: "Check If Email Address Has Been Pwned", withExtension: "shortcut")!,
@@ -31,7 +31,13 @@ class Tests: XCTestCase {
     for url in urls {
       XCTAssertNotNil(Workflow.init(url: url))
     }
-    
+  }
+  
+  func testShortcut() {
+    let url = Bundle.main.url(forResource: "Bitcoin Price", withExtension: "shortcut")!
+    let shortcut = Shortcut(url: url)
+    XCTAssertNotNil(shortcut)
+    XCTAssertEqual(shortcut!.name, "Bitcoin Price")
   }
 }
 

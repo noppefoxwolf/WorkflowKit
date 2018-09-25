@@ -7,6 +7,17 @@
 
 import UIKit
 
+public class Shortcut {
+  public let name: String
+  public let workflow: Workflow
+  
+  public init?(url: URL) {
+    guard let workflow = Workflow.init(url: url) else { return nil }
+    self.workflow = workflow
+    self.name = url.lastPathComponent.replacingOccurrences(of: "." + url.pathExtension, with: "")
+  }
+}
+
 public class Workflow: Decodable {
   public let actions: [Workflow.Action]
   public let clientRelease: String
@@ -49,7 +60,7 @@ extension Workflow {
       self.glyphNumber = try container.decode(Int.self, forKey: .glyphNumber)
       self.imageData = try container.decode(Data.self, forKey: .imageData)
       let startColorValue = try container.decode(Int64.self, forKey: .startColor)
-      self.startColor = UIColor(rgbaValue: startColorValue)
+      self.startColor = PresetColor(rawValue: startColorValue)?.applicationColor ?? UIColor(rgbaValue: startColorValue)
     }
     
     public enum CodingKeys: String, CodingKey {
