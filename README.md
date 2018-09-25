@@ -1,5 +1,3 @@
-# WorkflowKit
-
 ![](https://github.com/noppefoxwolf/WorkflowKit/blob/master/Meta/banner.png)
 
 [![CI Status](https://img.shields.io/travis/noppefoxwolf/WorkflowKit.svg?style=flat)](https://travis-ci.org/noppefoxwolf/WorkflowKit)
