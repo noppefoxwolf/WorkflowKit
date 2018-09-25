@@ -14,7 +14,7 @@ public class Workflow: Decodable {
   public let icon: Workflow.Icon
   public let importQuestions: [Workflow.ImportQuestion]
   public let inputContentItemClasses: [String]
-  public let minimumClientVersion: Int
+  public let minimumClientVersion: Int?
   public let types: [String]
   
   public enum CodingKeys: String, CodingKey {

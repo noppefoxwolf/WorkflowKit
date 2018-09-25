@@ -22,7 +22,7 @@
 		D798907A215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7989073215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut */; };
 		D798907B215A47FE00AC8543 /* New Link Post in Ulysses.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7989074215A47FE00AC8543 /* New Link Post in Ulysses.shortcut */; };
 		D798907C215A47FE00AC8543 /* Get File Size.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7989075215A47FE00AC8543 /* Get File Size.shortcut */; };
-		D7AF48792159EC4000E1AAC9 /* Flashlight Morse.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */; };
+		D7989084215A4EFE00AC8543 /* Flashlight Morse.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +53,14 @@
 		78031DDF4BACB8606261B0FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		85F3F77707DD6CF71C18D99D /* Pods_WorkflowKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkflowKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C257F5E9D3DE149F42FFE76B /* Pods-WorkflowKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Example/Pods-WorkflowKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D798906F215A47FE00AC8543 /* PDF from Markdown.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "PDF from Markdown.shortcut"; sourceTree = "<group>"; };
-		D7989070215A47FE00AC8543 /* Siri News Reader.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Siri News Reader.shortcut"; sourceTree = "<group>"; };
-		D7989071215A47FE00AC8543 /* Stop Current Toggl Timer.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Stop Current Toggl Timer.shortcut"; sourceTree = "<group>"; };
-		D7989072215A47FE00AC8543 /* Bitcoin Price.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Bitcoin Price.shortcut"; sourceTree = "<group>"; };
-		D7989073215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Check If Email Address Has Been Pwned.shortcut"; sourceTree = "<group>"; };
-		D7989074215A47FE00AC8543 /* New Link Post in Ulysses.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "New Link Post in Ulysses.shortcut"; sourceTree = "<group>"; };
-		D7989075215A47FE00AC8543 /* Get File Size.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Get File Size.shortcut"; sourceTree = "<group>"; };
-		D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Flashlight Morse.shortcut"; sourceTree = "<group>"; };
+		D798906F215A47FE00AC8543 /* PDF from Markdown.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "PDF from Markdown.shortcut"; sourceTree = "<group>"; };
+		D7989070215A47FE00AC8543 /* Siri News Reader.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Siri News Reader.shortcut"; sourceTree = "<group>"; };
+		D7989071215A47FE00AC8543 /* Stop Current Toggl Timer.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Stop Current Toggl Timer.shortcut"; sourceTree = "<group>"; };
+		D7989072215A47FE00AC8543 /* Bitcoin Price.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Bitcoin Price.shortcut"; sourceTree = "<group>"; };
+		D7989073215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Check If Email Address Has Been Pwned.shortcut"; sourceTree = "<group>"; };
+		D7989074215A47FE00AC8543 /* New Link Post in Ulysses.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "New Link Post in Ulysses.shortcut"; sourceTree = "<group>"; };
+		D7989075215A47FE00AC8543 /* Get File Size.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Get File Size.shortcut"; sourceTree = "<group>"; };
+		D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */ = {isa = PBXFileReference; explicitFileType = compiled; path = "Flashlight Morse.shortcut"; sourceTree = "<group>"; };
 		F2844B29F4C7631597227DA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FEEF01E34A33F5D7F68D464F /* Pods-WorkflowKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Example/Pods-WorkflowKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +132,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -178,6 +177,7 @@
 				D798906F215A47FE00AC8543 /* PDF from Markdown.shortcut */,
 				D7989070215A47FE00AC8543 /* Siri News Reader.shortcut */,
 				D7989071215A47FE00AC8543 /* Stop Current Toggl Timer.shortcut */,
+				D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -286,6 +286,7 @@
 				D7989077215A47FE00AC8543 /* Siri News Reader.shortcut in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				D7989084215A4EFE00AC8543 /* Flashlight Morse.shortcut in Resources */,
 				D798907A215A47FE00AC8543 /* Check If Email Address Has Been Pwned.shortcut in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7AF48792159EC4000E1AAC9 /* Flashlight Morse.shortcut in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

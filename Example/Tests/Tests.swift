@@ -3,7 +3,7 @@ import XCTest
 
 class Tests: XCTestCase {
   func test() {
-    let url = Bundle.init(for: type(of: self)).url(forResource: "Flashlight Morse", withExtension: "shortcut")!
+    let url = Bundle.main.url(forResource: "Flashlight Morse", withExtension: "shortcut")!
     let workflow = Workflow.init(url: url)!
     print(workflow.actions.map({ $0.identifier }))
     XCTAssertEqual(workflow.clientRelease, "2.0")
@@ -15,6 +15,21 @@ class Tests: XCTestCase {
     XCTAssertEqual(workflow.inputContentItemClasses.count, 17)
     XCTAssertEqual(workflow.minimumClientVersion, 411)
     XCTAssertEqual(workflow.types.count, 2)
+  }
+  
+  func testUnsafe() {
+    let urls = [
+      Bundle.main.url(forResource: "Bitcoin Price", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "Check If Email Address Has Been Pwned", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "Get File Size", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "New Link Post in Ulysses", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "PDF from Markdown", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "Siri News Reader", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "Stop Current Toggl Timer", withExtension: "shortcut")!,
+    ]
+    for url in urls {
+      XCTAssertNotNil(Workflow.init(url: url))
+    }
     
   }
 }
