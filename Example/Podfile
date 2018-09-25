@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WorkflowKit_Example' do
+  pod 'WorkflowKit', :path => '../'
+
+  target 'WorkflowKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
