@@ -1,0 +1,16 @@
+PODS:
+  - WorkflowKit (0.1.0)
+
+DEPENDENCIES:
+  - WorkflowKit (from `../`)
+
+EXTERNAL SOURCES:
+  WorkflowKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WorkflowKit: 62051f63629adaae5d8449ec77d8ade5e1c7ceca
+
+PODFILE CHECKSUM: 568d5454df8c3f42bca5b38ca21e79c798917689
+
+COCOAPODS: 1.5.2

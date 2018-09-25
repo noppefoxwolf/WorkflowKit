@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/WorkflowKit.svg?style=flat)](https://cocoapods.org/pods/WorkflowKit)
 [![Platform](https://img.shields.io/cocoapods/p/WorkflowKit.svg?style=flat)](https://cocoapods.org/pods/WorkflowKit)
 
+## Usage
+
+```swift
+let url = Bundle(for: type(of: self)).url(forResource: "Flashlight Morse", withExtension: "shortcut")!
+let workflow = Workflow.init(url: url)!
+workflow.actions.map({ $0.identifier })
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -27,3 +35,9 @@ noppefoxwolf, tomoya.hirano@dena.com
 ## License
 
 WorkflowKit is available under the MIT license. See the LICENSE file for more info.
+
+## TODO
+
+- [ ] support action params
+- [ ] support icon data
+- [ ] support enums

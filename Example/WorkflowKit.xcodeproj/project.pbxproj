@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7061F9CBEC2B2693CC072249 /* Pods_WorkflowKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05378F051EE30195602EC71A /* Pods_WorkflowKit_Tests.framework */; };
+		D7AF48792159EC4000E1AAC9 /* Flashlight Morse.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 /* Begin PBXFileReference section */
 		05378F051EE30195602EC71A /* Pods_WorkflowKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkflowKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289BB39C94C0797A2ABADD05 /* Pods-WorkflowKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Tests/Pods-WorkflowKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F4F109187D232A4636BFAEC /* WorkflowKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WorkflowKit.podspec; path = ../WorkflowKit.podspec; sourceTree = "<group>"; };
+		3F4F109187D232A4636BFAEC /* WorkflowKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WorkflowKit.podspec; path = ../WorkflowKit.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WorkflowKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkflowKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +43,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6DDDA8F6BFE2D72916A0CCB9 /* Pods-WorkflowKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Tests/Pods-WorkflowKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78031DDF4BACB8606261B0FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		78031DDF4BACB8606261B0FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		85F3F77707DD6CF71C18D99D /* Pods_WorkflowKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkflowKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C257F5E9D3DE149F42FFE76B /* Pods-WorkflowKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Example/Pods-WorkflowKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F2844B29F4C7631597227DA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Flashlight Morse.shortcut"; sourceTree = "<group>"; };
+		F2844B29F4C7631597227DA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FEEF01E34A33F5D7F68D464F /* Pods-WorkflowKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkflowKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkflowKit_Example/Pods-WorkflowKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D7AF48782159EC4000E1AAC9 /* Flashlight Morse.shortcut */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AF48792159EC4000E1AAC9 /* Flashlight Morse.shortcut in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

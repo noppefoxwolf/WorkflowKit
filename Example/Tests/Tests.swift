@@ -1,28 +1,19 @@
 import XCTest
-import WorkflowKit
+@testable import WorkflowKit
 
 class Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+  func test() {
+    let url = Bundle.init(for: type(of: self)).url(forResource: "Flashlight Morse", withExtension: "shortcut")!
+    let workflow = Workflow.init(url: url)!
+    print(workflow.actions.map({ $0.identifier }))
+    XCTAssertEqual(workflow.clientRelease, "2.0")
+    XCTAssertEqual(workflow.clientVersion, "702")
+    XCTAssertEqual(workflow.icon.glyphNumber, 59845)
+    XCTAssertEqual(workflow.icon.imageData.count, 0)
+    XCTAssertEqual(workflow.importQuestions.count, 0)
+    XCTAssertEqual(workflow.inputContentItemClasses.count, 17)
+    XCTAssertEqual(workflow.minimumClientVersion, 411)
+    XCTAssertEqual(workflow.types.count, 2)
+  }
 }
+
