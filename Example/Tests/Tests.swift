@@ -26,6 +26,7 @@ class Tests: XCTestCase {
       Bundle.main.url(forResource: "PDF from Markdown", withExtension: "shortcut")!,
       Bundle.main.url(forResource: "Siri News Reader", withExtension: "shortcut")!,
       Bundle.main.url(forResource: "Stop Current Toggl Timer", withExtension: "shortcut")!,
+      Bundle.main.url(forResource: "Flashlight Morse", withExtension: "shortcut")!,
     ]
     for url in urls {
       XCTAssertNotNil(Workflow.init(url: url))
